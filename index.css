@@ -1,5 +1,6 @@
 /* width */
 ::-webkit-scrollbar {
+  display: none;
   width: 20px;
 }
 
@@ -226,18 +227,24 @@ h1 {
 
 .header-2 {
   color: White;
-  font-size: 120px;
+  font-size: 90px;
   z-index: 999;
+}
+
+.wraper {
+  text-align: center!important;
 }
 
 .para {
   color: #ffa500;
   font-size: 30px;
+  text-align: justify;
 }
 
 .para-2 {
   color: #858585;
   font-size: 30px;
+  text-align: justify;
 }
 
 .content-2 {
