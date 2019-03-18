@@ -1,3 +1,6 @@
+*{
+  font-family: 'Overpass', sans-serif;
+}
 /* width */
 ::-webkit-scrollbar {
   display: none;
@@ -28,6 +31,7 @@ html {
         body{
             padding: 0;
             margin: 0;
+
         }
      html {
   font-family: 'Roboto Condensed', sans-serif;
@@ -73,6 +77,7 @@ html {
 }
 html, body, .hero {
   height: 100%;
+  width:100%;
 }
 .hero {
   display: flex;
@@ -82,6 +87,7 @@ html, body, .hero {
   min-height: 600px;
   background:rgb(0,0,0);
   background-size: cover;
+  overflow: hidden;
 }
 .nineteen{
   position: relative;
@@ -102,14 +108,14 @@ html, body, .hero {
   width: 30%;
   z-index: 2;
 }
+.hero p{
+  margin:0;
+}
 .Where-innovation-mee {
   position: relative;
-  margin-bottom: -50px;
-  width: 585px;
-  height: 39px;
   text-shadow: 0 2px 4px #ffffff;
   font-family: Overpass;
-  font-size: 31px;
+  font-size: 25px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -121,11 +127,9 @@ html, body, .hero {
 }
 .th-April {
   position: relative;
-  width: 249px;
-  height: 63px;
   text-shadow: 0 2px 4px #ffffff;
   font-family: Overpass;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -135,23 +139,41 @@ html, body, .hero {
   color: #ffffff;
   z-index: 2;
 }
+.row-1 {
+  width: 100%;
+  height: 5%;
+  border: none;
+  color: black;
+  transform: translate(0px,-120px);
+  background-color: black;
+  z-index: 999;
+}
 .svg{
-  width: 30%;
+  padding-top:3%;
+  width: 29%;
+  margin-left:16%;
 
 }
 .whatiszenith1{
-  margin-top: 70%;
-  width: 100%;
+
+  width: 37%;
+  margin-bottom:29%;
 }
 .whatiszenith2{
-  margin-left: 48%;
-  margin-top: -50%;
-  width: 50%;
+  margin-left: -19%;
+  width: 42%;
+  margin-top:12%;
 }
 
 .paragraph{
-  width: 45%;
-  margin-top: 0px;
+  width: 42%;
+  margin-right:11%;
+  margin-top: 3.5%;
+  font-size:19px;
+  text-align:justify;
+}
+.paragraph p{
+  margin:6%;
 }
 h1 {
   font-size: 100px;
@@ -201,19 +223,21 @@ h1 {
             color: orange;
         }
 
-.hero-2 {
+/*.hero-2 {
   width: 100%;
   min-height: 900px;
   background-image:url(bg.png);
   background-size: cover;
-}
+}*/
 
 .parallax-window {
-    min-height: 1000px;
+    /*min-height: 1000px;*/
     background: transparent;
     text-align: center;
     margin: 0px;
     width: 100%!important;
+    height:100% !important;
+    padding-top:6%;
 }
 
 .parallax-window-2 {
@@ -226,9 +250,14 @@ h1 {
 }
 
 .header-2 {
-  color: White;
-  font-size: 90px;
+  color: #ffffff;
+  font-size: 60px;
   z-index: 999;
+  margin-top:2%;
+  font-weight: 700;
+}
+#header-2{
+  margin-top:2%;
 }
 
 .wraper {
@@ -236,15 +265,11 @@ h1 {
 }
 
 .para {
-  color: #ffa500;
-  font-size: 30px;
-  text-align: justify;
+  color:  #ffffff;
 }
 
 .para-2 {
-  color: #858585;
-  font-size: 30px;
-  text-align: justify;
+  color: #ffa500;
 }
 
 .content-2 {
@@ -255,18 +280,18 @@ h1 {
 
 .header-3 {
   z-index: 999;
-  color: white;
-  font-size: 130px;
-  float: left;
-  margin-left: 5%;
-  margin-top: 3%;
+  color: #ffffff;
+  font-family: 'Overpass', sans-serif !important;
+  font-size: 60px;
+  font-weight:700;
+  text-align:center;
 }
 .We-have-series-of-in {
-  width: 1343px;
-  height: 106px;
-  font-family: sans-serif;
-  font-size: 42px;
-  font-weight: bold;
+  width: 70%;
+  margin:auto;
+  font-family: 'Overpass', sans-serif;
+  font-size: 27px;
+  font-weight: 700;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
@@ -311,16 +336,17 @@ h1 {
 
 .code {
   float: right;
- 
   text-align: justify;
 }
 
 .code-head {
-  color: #ffa500;
-  font-size: 60px;
-  float: left;
+  color: #ffffff;
+  font-size: 50px;
+  text-align:center;
+  
+
 }
-.code-para:hover{
+.code-head:hover{
   color:#ffa500;
 }
 
@@ -331,6 +357,7 @@ h1 {
   text-align: justify;
   margin-right: 2%;
   margin-left: 2%;
+  font-family: 'Overpass', sans-serif !important;
 }
 
 .row {
@@ -346,7 +373,35 @@ h1 {
 .br {
   display: block;
 }
+.contact-container{
+  margin:auto;
+  width:50%;
+}
+#header-4 p{
+  text-align:center;
+  font-family: 'Overpass', sans-serif !important;
+  font-weight:700;
+  margin-bottom:10%;
 
+}
+.contact-heading{
+  font-size:60px !important;
+  color:#ffffff;
+  margin-top:0px;
+}
+.contact-numbers{
+  color:#ffffff;
+  font-size:27px;
+}
+.mailing-address{
+  color:#ffa500;
+  font-size:30px;
+}
+.address{
+  color:#ffffff;
+  font-size:27px;
+}
+/*
 .header-4 {
   font-size: 120px;
   color: white;
@@ -399,7 +454,7 @@ h1 {
   color: white;
   font-size: 40px;
 }
-
+*/
 @media only screen and (max-width: 600px){
   .hero {
   display: flex;
@@ -459,9 +514,6 @@ h1 {
   z-index: 2;
 }
 .th-April {
-  
-  width: 100%;
-  height: 63px;
   text-shadow: 0 2px 4px #ffffff;
   font-family: Overpass;
   font-size: 50px;
@@ -475,18 +527,6 @@ h1 {
   z-index: 2;
 }
 
-#container {
-  margin-bottom: 0px;
-  overflow-y:scroll;
-  overflow-x:hidden;
-  transform: rotate(270deg) translateX(-100%);
-  transform-origin: top left;
-  background-color:transparent;
-  position:relative;
-  width:100vh;
-  height:100vw;
-}
-
 .svg{
   width: 100%;
 
@@ -497,12 +537,13 @@ h1 {
   width: 100%;
 }
 .whatiszenith2{
-  margin-left: 50%;
-  margin-top: -70%;
+  margin-left: 48%;
+  margin-top: -50%;
   width: 50%;
 }
 
 .paragraph{
+  margin-top:;
   width: 100%;
 
 }
