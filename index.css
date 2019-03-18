@@ -1,21 +1,23 @@
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 20px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: black; 
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #858585; 
+  background: #ffa500; 
+  border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: gray; 
 }
 
 html {
@@ -29,6 +31,11 @@ html {
      html {
   font-family: 'Roboto Condensed', sans-serif;
 }
+
+
+
+
+
 #mainnav {
   position: fixed;
   font-family: 'Roboto Condensed', sans-serif;
@@ -67,10 +74,83 @@ html, body, .hero {
   height: 100%;
 }
 .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   min-height: 600px;
-  background-image:url(testmonial-bg.jpg);
+  background:rgb(0,0,0);
   background-size: cover;
+}
+.nineteen{
+  position: relative;
+  margin-top: 5%;
+  margin-bottom: -5%;
+  margin-left: 30%;
+  width: 8%;
+}
+.pc{
+  position: relative;
+  margin-top: -40px;
+  margin-bottom: -150px;
+  width: 80%;
+  z-index: 0;
+}
+.zenith{
+  position: relative;
+  width: 30%;
+  z-index: 2;
+}
+.Where-innovation-mee {
+  position: relative;
+  margin-bottom: -50px;
+  width: 585px;
+  height: 39px;
+  text-shadow: 0 2px 4px #ffffff;
+  font-family: Overpass;
+  font-size: 31px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  z-index: 2;
+}
+.th-April {
+  position: relative;
+  width: 249px;
+  height: 63px;
+  text-shadow: 0 2px 4px #ffffff;
+  font-family: Overpass;
+  font-size: 50px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: justify;
+  color: #ffffff;
+  z-index: 2;
+}
+.svg{
+  width: 30%;
+
+}
+.whatiszenith1{
+  margin-top: 70%;
+  width: 100%;
+}
+.whatiszenith2{
+  margin-left: 48%;
+  margin-top: -50%;
+  width: 50%;
+}
+
+.paragraph{
+  width: 45%;
+  margin-top: 0px;
 }
 h1 {
   font-size: 100px;
@@ -141,15 +221,13 @@ h1 {
     text-align: center;
     margin: 0px;
     width: 100!important;
+    background-image: src('bg-3.png');
 }
 
 .header-2 {
-  color: #858585;
+  color: White;
   font-size: 120px;
   z-index: 999;
-  float: left;
-  margin-top: 5%;
-  margin-left: 3%;
 }
 
 .para {
@@ -163,9 +241,9 @@ h1 {
 }
 
 .content-2 {
-  margin-left: 50%;
-  text-align: justify;
-  margin-right: 2%;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
 }
 
 .header-3 {
@@ -176,56 +254,76 @@ h1 {
   margin-left: 5%;
   margin-top: 3%;
 }
-
-.xunbao {
-  float: right;
-  text-align: justify;
-  margin-left: 50%;
+.We-have-series-of-in {
+  width: 1343px;
+  height: 106px;
+  font-family: sans-serif;
+  font-size: 42px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
 }
-
-.xunbao-head {
-  color: #ffa500;
-  font-size: 90px;
+#container .box {
+  margin:0px;
+  width:500px;
+  height: 600px;
+  display:inline-block;
+  position:relative;
 }
-
-.xunbao-para {
-  color: white;
-  font-size: 30px;
-  margin-right: 1%;
+#container .box > div {
+  margin-top: 10%;
+  width:350px;
+  font-size:100px;
+  color:#FFF;
+  position:relative;
+  white-space: normal;
+  
+  
 }
-
-.presentation-head {
-  z-index: 999;
-  color: white;
-  font-size: 90px;
-  float: left;
-  margin-left: 5%;
-  color: #ffa500;
+#container {
+  margin-bottom: -2000px;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  transform: rotate(270deg) translateX(-100%);
+  transform-origin: top left;
+  background-color:transparent;
+  position:relative;
+  width:100vh;
+  height:100vw;
 }
-
-.presentation-para {
-  color: white;
-  font-size: 30px;
-  float: left;
-  text-align: justify;
-  margin-left: 5%;
-}
-
-.code-head {
-  color: #ffa500;
-  font-size: 90px;
-  float: left;
-}
-
-.presentation {
-  color: #ffa500;
-  margin-right: 50%;
+#container2 {
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  white-space:nowrap;
+  font-size:0;
 }
 
 .code {
   float: right;
-  margin-left: 50%;
+ 
   text-align: justify;
+}
+
+.code-head {
+  color: #ffa500;
+  font-size: 60px;
+  float: left;
+}
+.code-para:hover{
+  color:#ffa500;
+}
+
+.code-para {
+  color: white;
+  font-size: 25px;
+  float: right;
+  text-align: justify;
+  margin-right: 2%;
+  margin-left: 2%;
 }
 
 .row {
@@ -238,21 +336,13 @@ h1 {
   z-index: 999;
 }
 
-.code-para {
-  color: white;
-  font-size: 30px;
-  float: right;
-  text-align: justify;
-  margin-right: 5%;
-}
-
 .br {
   display: block;
 }
 
 .header-4 {
   font-size: 120px;
-  color: #858585;
+  color: white;
   font-weight: bold;
 }
 
@@ -269,12 +359,17 @@ h1 {
 }
 
 .mail {
-  color: white;
+  color: #ffa500;
+  font-size: 60px;
+}
+.developers {
+  color: #ffa500;
   font-size: 60px;
 }
 
+
 .email {
-  color: #ffa500;
+  color: white;
   font-size: 50px;
 }
 
@@ -290,20 +385,116 @@ h1 {
 
 .reach {
   font-size: 50px;
-  color: white;   
+  color: #ffa500;   
 }
 
 .ymca {
-  color: #ffa500;
+  color: white;
   font-size: 40px;
 }
 
 @media only screen and (max-width: 600px){
+  .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  min-height: 600px;
+  background:rgb(0,0,0);
+  background-size: cover;
+}
+.We-have-series-of-in {
+  width: 100%;
+  font-family: sans-serif;
+
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+  .nineteen{
+  width: 90%;
+
+}
+
+.zenith{
+  margin-left: 0px;
+  width: 100%;
+  z-index: 2;
+}
+.pc{
+  object-fit: cover;
+  margin-bottom: -300px;
+  margin-top: -40px;
+  height: 60%;
+  z-index: 0;
+}
+.Where-innovation-mee {
+  position: relative;
+  margin-bottom: 0px;
+  align-items: center;
+  width: 100%;
+  height: 39px;
+  text-shadow: 0 2px 4px #ffffff;
+  font-family: Overpass;
+  font-size: 31px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  z-index: 2;
+}
+.th-April {
+  
+  width: 100%;
+  height: 63px;
+  text-shadow: 0 2px 4px #ffffff;
+  font-family: Overpass;
+  font-size: 50px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  z-index: 2;
+}
+
+.svg{
+  width: 100%;
+
+}
+.whatiszenith1{
+  margin-top:0%;
+
+  width: 100%;
+}
+.whatiszenith2{
+  margin-left: 48%;
+  margin-top: -50%;
+  width: 50%;
+}
+
+.paragraph{
+  width: 100%;
+
+}
+
+
+
   .br {
     display: none;
   }
   .parallax-window-2 {
-    min-height: 4400px;
+    min-height: 1000px;
   }
   h1 {
     font-size: 80px;

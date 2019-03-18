@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Zenith 19</title>
+    <script type="text/javascript" src="landing.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="index.css">
@@ -12,7 +13,7 @@
     <script src="parallax.js-1.5.0/parallax.js"></script>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
 </head>
-<body>
+<body class="">
     <nav role='navigation' id="mainnav">
     <br><br><br>
   <ul class="gap">
@@ -28,15 +29,50 @@
 </div>
 
   <div class="hero" id="hero">
-      <h1>Zenith 19<br><span class="hero-content">Where innovation meets implementation</span></h1>
-      
+        <svg class="nineteen" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  width="154" height="127" viewBox="0 0 154 127">
+          <defs>
+              <text id="b" fill="#F5A623" font-family="Overpass-Bold, Overpass" font-size="140" font-weight="bold">
+                  <tspan x="1086" y="300">19</tspan>
+              </text>
+              <filter id="a" width="128.9%" height="123.2%" x="-14.4%" y="-10.5%" filterUnits="objectBoundingBox">
+                  <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+                  <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="6.5"/>
+                  <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.961710989 0 0 0 0 0.65036732 0 0 0 0 0.138542295 0 0 0 1 0"/>
+              </filter>
+          </defs>
+          <g fill="#F5A623" fill-rule="evenodd" transform="translate(-1077 -189)">
+              <use filter="url(#a)" xlink:href="#b"/>
+              <use xlink:href="#b"/>
+          </g>
+     </svg>
+
+     <img class="zenith" src="./assets2/zenithlogo.png">
+     <img class="pc" src="./assets2/pc.png">
+     <p class="Where-innovation-mee">Where innovation meets implementation.</p>
+     <p class="th-April">7-8th April</p>
   </div>
 
 <canvas id="bubble"></canvas>
 <div class="parallax-window" data-parallax="scroll" data-image-src="bg.png">
   <span class="header-2" id="header-2">What's Zenith?</span><span class="br"><br><br><br><br></span><br><br><br><br><br><br><br><br>
   <div class="content-2">
-    <p class="para">
+
+    <div class="svg">
+       <svg class="whatiszenith1" xmlns="http://www.w3.org/2000/svg" width="221" height="56" viewBox="0 0 221 56">
+    <text fill="#F5A623" fill-rule="evenodd" font-family="Overpass-Bold, Overpass" font-size="76" font-weight="bold" transform="translate(-181 -515)">
+        <tspan x="178.468" y="570">Zenith</tspan>
+    </text>
+    </svg>
+
+
+    <svg class="whatiszenith2" xmlns="http://www.w3.org/2000/svg" width="283" height="289" viewBox="0 0 283 289">
+    <path fill="#F5A623" fill-rule="nonzero" d="M159.697 268.742c0 4.605 1.65 9.539 4.289 13.157H34.975C15.508 281.9 0 266.44 0 247.032V72.695c0-1.973.33-4.276 1.32-6.25.99-1.973 1.98-3.618 3.63-5.263L64.67 4.276c1.32-1.316 3.3-2.631 4.95-3.29C71.6.33 73.58 0 75.559 0h114.493c19.467 0 34.975 15.46 34.975 34.867V139.47c-2.64-1.315-5.61-1.973-8.579-1.973-2.64 0-5.279.658-7.919 1.644V34.867c0-10.197-8.248-18.42-18.477-18.42H80.838V43.09c0 19.078-15.838 34.867-34.975 34.867H16.498v169.074c0 10.197 8.248 18.42 18.477 18.42h124.722v3.29zM281.31 234.52c2.972 4.609 1.321 9.875-3.963 11.85-4.954 1.976-9.577 3.622-14.53 5.597-.992.329-1.652.987-1.652 1.975-.33 5.267-.66 10.534-.66 15.8-.33 5.268-4.624 8.56-9.908 7.243-5.284-1.317-10.238-2.634-15.522-4.28-.99-.329-1.651 0-2.312.659-3.302 4.28-6.605 8.23-9.907 12.18-3.633 4.608-8.917 4.608-12.55 0-3.302-3.95-6.604-8.23-9.907-12.18-.66-.659-1.321-.988-2.312-.659l-14.86 3.95c-6.276 1.976-10.569-2.633-10.569-7.9 0-4.938-.66-10.205-.66-15.142 0-.988-.33-1.646-1.321-1.975-4.954-1.976-10.238-3.95-15.192-5.597-4.954-1.975-6.605-6.912-3.963-11.192 2.972-4.608 5.945-9.217 8.917-13.496.66-.988.66-1.646 0-2.634-2.972-4.28-5.945-8.888-8.587-13.167-2.972-4.609-1.32-9.547 3.633-11.85 4.954-1.976 9.908-3.951 14.861-5.597.991-.33 1.321-.988 1.321-1.975.33-5.267.33-10.534.66-15.801.331-5.596 4.624-8.559 11.56-6.913 3.632.988 8.586 2.304 13.54 3.621 1.32.33 1.981.33 2.972-.987 3.303-3.95 6.275-7.9 9.577-12.18 3.633-4.609 8.917-4.28 12.55 0 3.302 3.95 6.605 7.9 9.907 12.18.66.987 1.321 1.316 2.642.987 4.954-1.317 10.238-2.963 15.192-4.28 5.284-1.316 9.907 1.647 10.237 7.243l.991 15.8c0 .988.33 1.647 1.321 1.976 4.954 1.646 9.577 3.62 14.531 5.267 5.614 1.975 7.266 7.242 3.963 12.18-2.642 4.279-5.614 8.558-8.586 12.838-.66.987-.66 1.646 0 2.633 2.972 4.938 5.944 9.217 8.586 13.826zm-71.54-38.895c0 4.931 3.973 8.876 8.939 8.876 4.634 0 8.606-3.945 8.606-8.876 0-4.93-3.972-8.876-8.606-8.876-4.966 0-8.938 3.945-8.938 8.876zm19.808 48.661c-.991.33-1.652.987-2.313 1.316-.992.329-2.314.658-3.306.987-1.322 0-2.314-.658-2.644-1.974-.33-.987-.33-1.973-.33-2.96.33-1.974.66-4.276.99-6.25.992-6.25 2.315-12.5 3.306-18.749.33-1.645.661-3.29.661-4.934 0-1.974-1.322-2.96-3.305-2.96h-18.511c-1.322.329-1.983.986-1.983 1.644 0 .987.33 1.645 1.653 2.303.991.329 1.983.329 2.975.658 2.313.329 2.974.987 2.974 3.289v.987c-.991 5.592-1.983 10.855-2.974 16.446-.662 3.29-.992 6.25-1.323 9.54-.66 4.604 3.967 8.88 7.272 9.538 1.984.33 4.298.33 6.28.33 4.628 0 8.265-1.974 11.57-5.264.661-.657.992-1.315 1.322-1.973 0-1.316-.991-2.303-2.314-1.974z"/>
+    </svg>
+    
+    </div>
+
+    <div class="paragraph">
+      <p class="para">
       Zenith, a carnival of technofanatics, is
       a catalogue of events hosted by
       Manan, the computer technical
@@ -57,72 +93,104 @@
       various domains like webVR,
       webCompat, Extensions, IOT, etc.
     </p>
+
+    </div>
+   
   </div>
 </div>
 <div class="parallax-window-2" data-parallax="scroll" data-image-src="bg-3.jpg">
   <hr class="row">
   <span class="header-3" id="header-3">Events</span><br><br><br><br><br><br><br><br><br><br><br>
-  <div class="xunbao">
-    <span class="xunbao-head">Xunbao</span>
-    <p class="xunbao-para">Aren't you tempted by quizzes? Don't you enjoy searching answers for
-    those tricky questions? We all go bizarre to find and submit the answers
-    before our friends do. ‘XUNBAO' is brought to relive those gone days of
-    excitement and fun. It was an online treasure hunt.</p>
+  <p class="We-have-series-of-in">We have series of interesting and engaging fun and coding events in this year’s edition of zenith. Here is the list :-
+  </p>
+<div id="container">
+  <div id="container2">
+    <div class="box ">
+      <div class="code">
+        <span class="code-head">Xunbao</span>
+        
+          <p class="code-para">Aren't you tempted by quizzes? Don't you enjoy searching answers for
+          those tricky questions? We all go bizarre to find and submit the answers
+          before our friends do. ‘XUNBAO' is brought to relive those gone days of
+          excitement and fun. It was an online treasure hunt.</p>
+                
+      </div>
+    </div>
+    <div class="box ">
+      <div class="code">
+        <span class="code-head">Presentation Event</span><br>
+        <p class="code-para">Participants with their self-made projects will present their ideas and
+        compete for the prize. Confidence and creativity is the key. Manan
+        awaits many innovative ideas from you.</p>
+       </div>
+     </div>
+    <div class="box three">
+      <div class="code">
+        <span class="code-head">Code Relay</span><br>
+        <p class="code-para">CodeRelay is a coding contest, in which an individual or a team of
+        two could participate. Participants were provided with some random
+        competitive questions, to which they have to answer with 16 minutes.
+        Lesser the time, more the marks awarded.</p>
+      </div>
+    </div>
+    <div class="box four">
+      <div class="code">
+        <span class="code-head">VR Gaming</span><br>
+        <p class="code-para">Wear the head mount device (HMD) and deep dive into the virtual world.
+        Lots of games were played there. Just at a nominal fee of Rs
+        10/-.Imaginations came out live and illusions were fantasised.</p>
+      </div>
+    </div>
+    <div class="box five">
+      <div class="code">
+        <span class="code-head">Hack On</span><br>
+        <p class="code-para">This event is for those who have that hacking worm in them and who
+        craves to hack. A hacking event which provided challenges for
+        cryptography, hacking, encryption and much more. It was an online
+        pre-fest event</p>
+      </div>
+    </div>
+    <div class="box six">
+      <div class="code">
+        <span class="code-head">AR Treasure Hunt</span><br>
+        <p class="code-para">AR Treasure hunt is an event in which an individual or a team of 2 members
+        could participate where participants tried to find hidden objects or places
+        by following a series of clues using the Augmented Reality. The team who
+        found all clues in minimum time won the game</p>
+      </div>
+    </div>
+    <div class="box seven">
+      <div class="code">
+        <span class="code-head">CodeXplod</span><br>
+        <p class="code-para">CodeXplod is a coding event for team of two members, It is hosted
+        on Hackerearth platform in which each team is given 8 problems
+        which they have to solve in any of programming language in given
+        time. Each problem question comprise of 100 marks and the team
+        which scored maximum marks in least time is declared as winner.</p>
+      </div>
+    </div>
+    <div class="box eight">
+      <div class="code">
+        <span class="code-head">Mobile Gaming Tournament</span><br>
+        <p class="code-para">PUBG, the game which nearly broke the Internet and is the current
+        obsession of the youth is getting a competitive make-over by Manan. It's an
+        individual event where gamers will come and battle for the prize. The one
+        who will survive till last will win the event</p>
+      </div>
+    </div>
+    <div class="box nine">
+      <div class="code">
+        <span class="code-head">Web Development</span><br>
+        <p class="code-para">A Website Design competition, in which an individual or a team of
+        two can participate.In this event participants have to design the
+        website on a particular theme and Internet usage is allowed. Crosscollege participation is allowed i.e both participants can be from different colleges.</p>
+      </div>
+    </div>
   </div>
-  <div class="presentation">
-    <span class="presentation-head">Presentation Event</span><br>
-    <p class="presentation-para">Participants with their self-made projects will present their ideas and
-    compete for the prize. Confidence and creativity is the key. Manan
-    awaits many innovative ideas from you.</p>
-  </div>
-  <div class="code">
-    <span class="code-head">Code Relay</span><br>
-    <p class="code-para">CodeRelay is a coding contest, in which an individual or a team of
-    two could participate. Participants were provided with some random
-    competitive questions, to which they have to answer with 16 minutes.
-    Lesser the time, more the marks awarded.</p>
-  </div>
-  <div class="presentation">
-    <span class="presentation-head">VR Gaming</span><br>
-    <p class="presentation-para">Wear the head mount device (HMD) and deep dive into the virtual world.
-    Lots of games were played there. Just at a nominal fee of Rs
-    10/-.Imaginations came out live and illusions were fantasised.</p>
-  </div>
-  <div class="code">
-    <span class="code-head">Hack On</span><br>
-    <p class="code-para">This event is for those who have that hacking worm in them and who
-    craves to hack. A hacking event which provided challenges for
-    cryptography, hacking, encryption and much more. It was an online
-    pre-fest event</p>
-  </div>
-  <div class="presentation">
-    <span class="presentation-head">AR Treasure Hunt</span><br>
-    <p class="presentation-para">AR Treasure hunt is an event in which an individual or a team of 2 members
-    could participate where participants tried to find hidden objects or places
-    by following a series of clues using the Augmented Reality. The team who
-    found all clues in minimum time won the game</p>
-  </div>
-  <div class="code">
-    <span class="code-head">CodeXplod</span><br>
-    <p class="code-para">CodeXplod is a coding event for team of two members, It is hosted
-    on Hackerearth platform in which each team is given 8 problems
-    which they have to solve in any of programming language in given
-    time. Each problem question comprise of 100 marks and the team
-    which scored maximum marks in least time is declared as winner.</p>
-  </div>
-  <div class="presentation">
-    <span class="presentation-head">Mobile Gaming Tournament</span><br>
-    <p class="presentation-para">PUBG, the game which nearly broke the Internet and is the current
-    obsession of the youth is getting a competitive make-over by Manan. It's an
-    individual event where gamers will come and battle for the prize. The one
-    who will survive till last will win the event</p>
-  </div>
-  <div class="code">
-    <span class="code-head">Web Development</span><br>
-    <p class="code-para">A Website Design competition, in which an individual or a team of
-    two can participate.In this event participants have to design the
-    website on a particular theme and Internet usage is allowed. Crosscollege participation is allowed i.e both participants can be from different colleges.</p>
-  </div>
+</div>
+
+  
+
 </div>
 <div class="parallax-window" data-parallax="scroll" data-image-src="bg-4.png">
   <span class="header-4" id="header-4">Contact Us</span><br><br><br><br>
@@ -131,12 +199,11 @@
   <span class="number">Prince Batra : +91-9953764100</span><br><br><br><br>
   <span class="mail">Mail Us:</span><br>
   <span class="email">manantechnosurge@gmail.com</span><br><br><br><br>
-  <span class="website">Our Website</span><br>
-  <span class="site">http://zenith.elementsculmyca.com</span><br><br><br><br>
   <span class="reach">Reach Us</span><br>
   <span class="ymca">JCB University of Science and
   Technology, YMCA Faridabad, Sector 6,
   Faridabad</span>
+  <span class="developers">Developers:- Sagar and Ravinder</span><br>
 </div>
 </body>
 <script>
