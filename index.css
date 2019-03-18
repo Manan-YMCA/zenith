@@ -1,3 +1,6 @@
+*{
+  font-family: 'Overpass', sans-serif;
+}
 /* width */
 ::-webkit-scrollbar {
   display: none;
@@ -102,14 +105,14 @@ html, body, .hero {
   width: 30%;
   z-index: 2;
 }
+.hero p{
+  margin:0;
+}
 .Where-innovation-mee {
   position: relative;
-  margin-bottom: -50px;
-  width: 585px;
-  height: 39px;
   text-shadow: 0 2px 4px #ffffff;
   font-family: Overpass;
-  font-size: 31px;
+  font-size: 25px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -121,11 +124,9 @@ html, body, .hero {
 }
 .th-April {
   position: relative;
-  width: 249px;
-  height: 63px;
   text-shadow: 0 2px 4px #ffffff;
   font-family: Overpass;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -136,22 +137,31 @@ html, body, .hero {
   z-index: 2;
 }
 .svg{
-  width: 30%;
+  padding-top:3%;
+  width: 29%;
+  margin-left:16%;
 
 }
 .whatiszenith1{
-  margin-top: 70%;
-  width: 100%;
+
+  width: 37%;
+  margin-bottom:29%;
 }
 .whatiszenith2{
-  margin-left: 48%;
-  margin-top: -50%;
-  width: 50%;
+  margin-left: -19%;
+  width: 42%;
+  margin-top:12%;
 }
 
 .paragraph{
-  width: 45%;
-  margin-top: 0px;
+  width: 42%;
+  margin-right:11%;
+  margin-top: 3.5%;
+  font-size:19px;
+  text-align:justify;
+}
+.paragraph p{
+  margin:6%;
 }
 h1 {
   font-size: 100px;
@@ -209,11 +219,13 @@ h1 {
 }
 
 .parallax-window {
-    min-height: 1000px;
+    /*min-height: 1000px;*/
     background: transparent;
     text-align: center;
     margin: 0px;
     width: 100%!important;
+    height:100% !important;
+    padding-top:6%;
 }
 
 .parallax-window-2 {
@@ -226,9 +238,14 @@ h1 {
 }
 
 .header-2 {
-  color: White;
-  font-size: 90px;
+  color: #ffffff;
+  font-size: 60px;
   z-index: 999;
+  margin-top:2%;
+  font-weight: 700;
+}
+#header-2{
+  margin-top:2%;
 }
 
 .wraper {
@@ -236,15 +253,11 @@ h1 {
 }
 
 .para {
-  color: #ffa500;
-  font-size: 30px;
-  text-align: justify;
+  color:  #ffffff;
 }
 
 .para-2 {
-  color: #858585;
-  font-size: 30px;
-  text-align: justify;
+  color: #ffa500;
 }
 
 .content-2 {
@@ -459,9 +472,6 @@ h1 {
   z-index: 2;
 }
 .th-April {
-  
-  width: 100%;
-  height: 63px;
   text-shadow: 0 2px 4px #ffffff;
   font-family: Overpass;
   font-size: 50px;
@@ -475,18 +485,6 @@ h1 {
   z-index: 2;
 }
 
-#container {
-  margin-bottom: 0px;
-  overflow-y:scroll;
-  overflow-x:hidden;
-  transform: rotate(270deg) translateX(-100%);
-  transform-origin: top left;
-  background-color:transparent;
-  position:relative;
-  width:100vh;
-  height:100vw;
-}
-
 .svg{
   width: 100%;
 
@@ -497,12 +495,13 @@ h1 {
   width: 100%;
 }
 .whatiszenith2{
-  margin-left: 50%;
-  margin-top: -70%;
+  margin-left: 48%;
+  margin-top: -50%;
   width: 50%;
 }
 
 .paragraph{
+  margin-top:;
   width: 100%;
 
 }
