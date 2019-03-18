@@ -475,6 +475,18 @@ h1 {
   z-index: 2;
 }
 
+#container {
+  margin-bottom: 0px;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  transform: rotate(270deg) translateX(-100%);
+  transform-origin: top left;
+  background-color:transparent;
+  position:relative;
+  width:100vh;
+  height:100vw;
+}
+
 .svg{
   width: 100%;
 
@@ -485,8 +497,8 @@ h1 {
   width: 100%;
 }
 .whatiszenith2{
-  margin-left: 48%;
-  margin-top: -50%;
+  margin-left: 50%;
+  margin-top: -70%;
   width: 50%;
 }
 
